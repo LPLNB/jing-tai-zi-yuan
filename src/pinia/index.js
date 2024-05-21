@@ -1,10 +1,9 @@
-import { ceshiStore } from './ceshi.js'
+import { createPinia } from "pinia";
+const pinia = createPinia()
+
+import { userInfoStore } from './modules/user.js'
+
 
 export default {
-    setup() {
-        const OneStore = ceshiStore()
-        return {
-            OneStore
-        }
-    }
+    userInfoStore: userInfoStore()
 }

@@ -1,0 +1,16 @@
+{
+	"enterData": [
+		{
+			"title": "用户名",
+			"value": "",
+			"pla": "请输入用户名",
+			"type": "input"
+		},
+		{
+			"title": "用户密码",
+			"value": "",
+			"pla": "请输入用户密码",
+			"type": "pass"
+		}
+	]
+}

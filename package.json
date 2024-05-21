@@ -16,8 +16,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "axios": "^1.7.1",
     "path": "^0.12.7",
     "pinia": "^2.1.4",
+    "sass": "^1.77.2",
     "vite": "5.0.0"
   }
 }
