@@ -2,13 +2,13 @@
 	"enterData": [
 		{
 			"title": "用户名",
-			"value": "",
+			"value": "123",
 			"pla": "请输入用户名",
 			"type": "input"
 		},
 		{
 			"title": "用户密码",
-			"value": "",
+			"value": "213",
 			"pla": "请输入用户密码",
 			"type": "pass"
 		}

@@ -4,19 +4,23 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "ant-design-vue": "^4.2.1",
+    "cors": "^2.8.5",
+    "terser": "^5.31.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "axios": "^1.7.1",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "pinia": "^2.1.4",
     "sass": "^1.77.2",

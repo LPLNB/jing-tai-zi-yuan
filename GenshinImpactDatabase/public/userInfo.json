@@ -1,0 +1,18 @@
+{
+	"userInfo": [
+		{
+			"account": "123",
+			"passWord": "213",
+			"sex": "",
+			"age": "",
+			"avtar": ""
+		},
+		{
+			"account": "1234",
+			"passWord": "2131",
+			"sex": "",
+			"age": "",
+			"avtar": ""
+		}
+	]
+}

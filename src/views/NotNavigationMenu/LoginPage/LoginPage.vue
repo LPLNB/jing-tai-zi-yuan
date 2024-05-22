@@ -1,8 +1,8 @@
 <template>
 	<div class="LoginPage whv100">
 		<div class="background-video wh100 dfc">
-			<!--<video class="wh100 dfc" muted autoplay src="@/assets/PublicVideos/keqingzatan.mp4"></video>-->
-			<video class="wh100 dfc" muted autoplay src=""></video>
+			<video class="wh100 dfc" autoplay muted loop src="@/assets/PublicVideos/keqingzatan.mp4"></video>
+			<!--<video class="wh100 dfc" muted autoplay src=""></video>-->
 		</div>
 		<div class="login-region wh100 dfc">
 			<div class="region-box w-500 p-24 bor-20">
@@ -27,12 +27,27 @@
 import LoginPage from './config/LoginPage.json'
 import {reactive, ref} from "vue";
 import {deepCopy} from "@/utils/GlobalApproach.js";
+import {message} from "ant-design-vue";
+import {ceshiOne} from "@/api/ceshi.js";
 
 const allData = reactive(deepCopy(LoginPage))
 
 // 登录内容
 async function LoginCon() {
-
+	let params = {
+		userName: allData['enterData'][0]['value'],
+		userPass: allData['enterData'][1]['value'],
+	}
+	if(!params.userName) {
+		message.warning('请输入用户账号')
+	} else if(!params.userPass) {
+		message.warning('请输入用户密码')
+	} else {
+		const { code, info } = await ceshiOne(params)
+		if(code === 200) {
+			message.success(info)
+		}
+	}
 }
 
 
